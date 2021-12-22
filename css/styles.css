@@ -1,0 +1,260 @@
+@import "normalize.css";
+
+
+/*
+nuke styles on iOS buttons and inputs
+*/
+
+button, input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    line-height: 180%;
+    letter-spacing: 1px;
+    background-color: #f1f1f1;
+    color: #1a111f;
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 3.75rem;
+    line-height: 4rem;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+}
+
+p {
+    line-height: 150%;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.violet {
+    color: #af30f9;
+}
+
+.br {
+    border: 1px solid red;
+}
+
+.bb {
+    border: 1px solid blue;
+}
+
+
+/*
+basic containers
+*/
+
+.container1400 {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 0 auto;
+}
+
+.container1100 {
+    position: relative;
+    max-width: 1110px;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+
+
+/*
+header containers
+*/
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 50px 0;
+}
+
+
+/*
+backgrounds
+*/
+
+.bkmist {
+    background-image: url("../images/kyndi-corner-mist.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.bkcircles {
+    background-image: url("../images/kyndi-circles.svg");
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+/*
+flex containers
+*/
+
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flexblock75 {
+    box-sizing: border-box;
+    flex-basis: 75%;
+}
+
+.flexblock50 {
+    box-sizing: border-box;
+    flex-basis: 50%;
+}
+
+.flexblock25 {
+    box-sizing: border-box;
+    flex-basis: 25%;
+}
+
+
+
+/*
+common margins, padding, widths, line-heights
+*/
+
+.pl50 {
+    padding-left: 50px;
+}
+
+.pl75 {
+    padding-left: 75px;
+}
+
+.pr75 {
+    padding-right: 75px;
+}
+
+
+.pt100 {
+    padding-top: 100px;
+}
+
+.pt200 {
+    padding-top: 200px;
+}
+
+
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.h800 {
+    min-height: 800px;
+}
+
+
+
+
+/*
+gratuitous bouncing
+*/
+
+.bounce {
+	animation: bounce 1s cubic-bezier(.46,1.12,.69,1);
+	animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+	0% {transform: translateY(50px);}
+    60% {transform: translateY(-5px);}
+    80% {transform: translateY(2px);}
+	100% {transform: translateY(0px);}
+}
+
+
+
+
+/*
+custom styles for kyndi search for JavaScript
+*/
+
+.kyn-searchbox-submit {
+}
+
+.kyn-searchbox-input {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.kyn-results-info, .kyn-results-progress-indicator, .kyn-results-noresults, .kyn-error {
+    font-size: 120%;
+    padding: 30px 0;
+}
+
+.kyn-results-progress-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kyn-results-list-container {
+    padding-bottom: 50px;
+}
+
+.kyn-results-item {
+    margin-bottom: 30px;
+}
+
+.kyn-results-item .title {
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.kyn-results-item .byline {
+    color: #666666;
+}
+
+.kyn-results-item .link a {
+    color: #af30f9;
+    text-decoration: none;
+}
+
+.kyn-results-item .link a:hover {
+    color: #af30f9;
+    text-decoration: underline;
+}
+
+.kyn-results-item .sentence {
+    font-size: 95%;
+    line-height: 140%;
+}
